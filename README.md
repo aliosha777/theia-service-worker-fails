@@ -8,18 +8,22 @@ To launch do the following:
 From `/sw-plugin`:
 
 `yarn`
+
 `yarn package`
 
 copy the .vsix file to `/theia/plugins`
 
 From `/theia`:
 `yarn`
+
 `yarn build`
+
 `yarn start`
 
 From `/script-server`:
 
 `npm install`
+
 `node server.js`
 
 Theia runs at http://localhost:3000
