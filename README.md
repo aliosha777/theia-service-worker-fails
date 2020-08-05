@@ -14,6 +14,7 @@ From `/sw-plugin`:
 copy the .vsix file to `/theia/plugins`
 
 From `/theia`:
+
 `yarn`
 
 `yarn build`
@@ -29,4 +30,7 @@ From `/script-server`:
 Theia runs at http://localhost:3000
 Run the command SW Plugin to activate the plugin
 Observe the console output. It should say `ServiceWorker registration failed:  DOMException: Failed to register a ServiceWorker: The document is in an invalid state.`
+
+#Note:
+The service worker file sw.js does not exist in the project. This does not affect the issue that we're trying to solve because the error happens before the browser attempts to load the service worker file. For the purpose of this project, a 404 on sw.js insteadf of the current error is enough to consider it working.
 
